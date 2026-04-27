@@ -1,0 +1,14 @@
+# Security
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Virtual Environments (if you ever use one)
+venv/
+env/
+application/
+
+# Ignore actual resumes for privacy (optional, but recommended)
+Resume/*.pdf
