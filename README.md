@@ -64,6 +64,49 @@ EMAIL_APP_PASSWORD="your_16_digit_google_app_password"
 
 Run the bot: python interface.py
 
+WorkFlow
+
+[ START: interface.py ]
+      │
+      ├─► 1. jd_reader.py
+      │      └─► Reads `jd.txt`
+      │      └─► [FAIL] ──► If empty/missing, PRINT error & EXIT.
+      │      └─► [SUCCESS] ──► Returns raw JD string.
+      │
+      ├─► 2. email_jd.py
+      │      └─► Scans raw JD for regex email patterns.
+      │      └─► Returns Dictionary: {email, job_description}.
+      │
+      ├─► 3. summary.py (Prompt Generation)
+      │      └─► Injects JD into `relevance_prompt`.
+      │
+      ├─► 4. ai_response.py (Scoring)
+      │      └─► Sends prompt to Gemini 2.5 Flash-Lite.
+      │      └─► Extracts integer from response using regex.
+      │      └─► Returns Score (0-100).
+      │
+      ├─► 5. DECISION GATE (interface.py)
+      │      ├─► [Score < 70] ──► PRINT "Not relevant" & EXIT.
+      │      │
+      │      └─► [Score >= 70] 
+      │             │
+      │             ├─► WAIT 60 SECONDS (API Cooldown).
+      │             │
+      │             ├─► 6. summary.py (Prompt Generation)
+      │             │      └─► Injects JD and .env details into `email_prompt`.
+      │             │
+      │             ├─► 7. ai_response.py (Drafting)
+      │             │      └─► Sends prompt to Gemini.
+      │             │      └─► Returns clean drafted text.
+      │             │
+      │             └─► 8. send_email.py
+      │                    ├─► Locates local PDF CV.
+      │                    ├─► Parses drafted text for Subject/Body.
+      │                    ├─► Connects to smtp.gmail.com.
+      │                    └─► Sends application to Recruiter.
+      │
+[ END: Script Terminates Successfully ]
+
 
 🤝 Contributing
 Feel free to fork this repository, submit pull requests, or open issues to suggest improvements!
