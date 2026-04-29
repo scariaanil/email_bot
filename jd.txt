@@ -1,18 +1,30 @@
-🚀 Hiring: Quality Engineer (Manual Testing), Functional Test Planning (Must-have)
- 📍 Location: PAN India
- 💼 Experience: 5+ Years
+🚀 We’re Hiring: Manual Test Engineer | Remote
+Looking for a great opportunity in QA? We are hiring Manual Test Engineers with strong testing expertise to join our growing team!
 
-Share your CV at 📩ritika.gupta@mwidm.com | 📞 Call/WhatsApp: 9779753756
+🌍 Location: Remote
+💼 Experience: 2–8 Years
 
-🛠️ Key Responsibilities
-Design & execute test cases based on requirements/user stories
-Identify, document & track defects
-Lead testing efforts and support team decisions
-Collaborate with cross-functional teams for quality delivery
-Mentor junior testers & improve testing processes
+🔍 Job Summary:
+We are seeking skilled professionals with hands-on experience in Functional, Regression, and System Testing to ensure high-quality product delivery.
 
-🎯 Key Skills
-Functional Test Planning (Must-have)
-Strong analytical & problem-solving skills
-Defect tracking & test documentation
-Knowledge of testing methodologies
+🛠 Key Skills:
+• Manual Testing (Functional, Regression, Integration)
+• Test Case Design & Execution
+• Defect Tracking Tools (JIRA / Bugzilla)
+• Strong understanding of SDLC & STLC
+• Basic SQL knowledge (Preferred)
+
+📌 Responsibilities:
+• Design, review, and execute test cases
+• Identify, log, and track defects
+• Perform regression and functional testing
+• Collaborate closely with development teams
+• Ensure product quality and timely delivery
+
+✨ Good to Have:
+• Agile/Scrum experience
+• Basic API Testing (Postman)
+• Mobile/Web testing exposure
+
+📩 Apply Now:
+Share your resume at bhavani.billa@ktrioxconsulting.com

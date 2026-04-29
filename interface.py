@@ -1,6 +1,7 @@
 import time
 
 from ai_response import get_ai_response
+from application_logger import log_application
 from email_jd import extract_job_details
 from jd_reader import get_job_description
 from send_email import send_application_email
@@ -37,10 +38,14 @@ def main():
         # 4. Send Email
         if email_text and recruiter_email:
             send_application_email(email_text, recruiter_email)
+            log_application(recruiter_email, "Sent")
+
         else:
             print("Missing email text or recruiter email. Cannot send.")
+            log_application(recruiter_email, "Not Sent")
     else:
         print(f"Job is not relevant (Score: {relevance_score}). Aborting.")
+        log_application(recruiter_email, "Not Qualified OR AI API FAILURE")
 
 
 if __name__ == "__main__":
