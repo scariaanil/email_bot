@@ -23,12 +23,3 @@ def get_job_description(filename="jd.txt"):
             f"Error: Could not find '{filename}'. Please create it and paste your JD inside."
         )
         return None
-
-
-# Quick test block (This only runs if you execute this file directly)
-if __name__ == "__main__":
-    test_jd = get_job_description()
-    if test_jd:
-        print("Successfully read JD:")
-        print("-" * 20)
-        print(test_jd[:100] + "...\n[Truncated for testing]")
