@@ -12,3 +12,5 @@ application/
 
 # Ignore actual resumes for privacy (optional, but recommended)
 Resume/*.pdf
+jd.txt
+applications.csv

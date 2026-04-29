@@ -1,12 +1,13 @@
 import os
 import smtplib
 from email.message import EmailMessage
+
 from dotenv import load_dotenv
 
 load_dotenv()
-SENDER_EMAIL = os.getenv("EMAIL_SENDER")
+SENDER_EMAIL = os.getenv("SENDER_EMAIL")
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
-PERSONAL_EMAIL = os.getenv("OWN_EMAIL_ID")
+PERSONAL_EMAIL = os.getenv("PERSONAL_EMAIL")
 
 
 def send_application_email(email_text, recruiter_email):
@@ -52,7 +53,10 @@ def send_application_email(email_text, recruiter_email):
             pdf_data = f.read()
 
         msg.add_attachment(
-            pdf_data, maintype="application", subtype="pdf", filename=safe_attachment_name
+            pdf_data,
+            maintype="application",
+            subtype="pdf",
+            filename=safe_attachment_name,
         )
         print("-> CV attached successfully!")
     except FileNotFoundError:
