@@ -1,17 +1,18 @@
-🚀 Hiring: QA Engineer | Contract
- 📍 Location: Bangalore
- 💼 Experience: 3+ Years
- ⚡ High Priority
-We are looking for a skilled QA Engineer with strong experience in API and automation testing.
-🔹 Key Responsibilities:
-• Test execution & defect tracking
-• API & UI automation
-• Collaboration across teams
-🔹 Must-Have Skills:
-• API Testing & Automation
-• Manual & Automation testing
-• Agile tools (Jira, Confluence)
-🔹 Good-to-Have:
-• Non-functional testing
-• Automation frameworks
-📩 If interested share your updated CV at resume@fiddleleafsolutions.com
+🚀 Hiring: Quality Engineer (Manual Testing), Functional Test Planning (Must-have)
+ 📍 Location: PAN India
+ 💼 Experience: 5+ Years
+
+Share your CV at 📩ritika.gupta@mwidm.com | 📞 Call/WhatsApp: 9779753756
+
+🛠️ Key Responsibilities
+Design & execute test cases based on requirements/user stories
+Identify, document & track defects
+Lead testing efforts and support team decisions
+Collaborate with cross-functional teams for quality delivery
+Mentor junior testers & improve testing processes
+
+🎯 Key Skills
+Functional Test Planning (Must-have)
+Strong analytical & problem-solving skills
+Defect tracking & test documentation
+Knowledge of testing methodologies

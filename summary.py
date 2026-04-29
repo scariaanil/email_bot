@@ -47,6 +47,8 @@ CRITICAL INSTRUCTIONS:
 1. DO NOT use any Markdown formatting. Do not use **asterisks** for bolding. Use 100% plain text.
 2. Do not use placeholders like [Your Name]. Use the real details provided below to sign off the email.
 3. The very FIRST line of your response MUST start with "Subject: " followed by a strong subject line.
+4. Note down the Current and Expected CTC at the end of the email, Only id it is asked in the job description
+5. Preferedd location should always be mentioned as Bangalore, Chennai, If it ia available in the job description, If there is no mention of preferred location, do not add it.
 
 Here is the job description and personal details to use:
 {job_desc} {details}
